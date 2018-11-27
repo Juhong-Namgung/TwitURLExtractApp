@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.4+11"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Namgung\workspace_kepco\TweetExtractApp"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Namgung\git\TwitURLExtractApp\TweetExtractApp"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="KR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Namgung\workspace_kepco\TweetExtractApp"/>
+    <property name="user.dir" value="C:\Users\Namgung\git\TwitURLExtractApp\TweetExtractApp"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="9.0.4+11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Namgung\workspace_kepco\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12882242246409298457.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Namgung\git\TwitURLExtractApp\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4495882567184290331.tmp"/>
     <property name="sun.jnu.encoding" value="MS949"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;F:\tools\;C:\Users\Namgung\Anaconda3;C:\Users\Namgung\Anaconda3\Scripts;C:\Users\Namgung\Anaconda3\Library\bin;C:\Users\Namgung\AppData\Local\Microsoft\WindowsApps;%JAVA_HOME\bin;C:\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk-9.0.4\bin;F:\tools\Microsoft_VS_Code\Microsoft VS Code\bin;C:\Program Files\MATLAB\R2016a\java;;."/>
     <property name="jdk.debug" value="release"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="9.0.4"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Namgung\workspace_kepco\TweetExtractApp\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\Namgung\git\TwitURLExtractApp\TweetExtractApp\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
