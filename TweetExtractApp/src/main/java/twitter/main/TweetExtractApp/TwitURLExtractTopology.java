@@ -34,6 +34,7 @@ public class TwitURLExtractTopology {
 		
 		ExtractURLBolt extractBolt = new ExtractURLBolt();
 		ExpandURLBolt expandBolt = new ExpandURLBolt();
+		ValidateURLBolt validateBolt = new ValidateURLBolt();
 		ReportBolt reportBolt = new ReportBolt();
 		
 		TopologyBuilder builder = new TopologyBuilder();
@@ -41,10 +42,11 @@ public class TwitURLExtractTopology {
 		builder.setSpout("twit-spout", spout);
 		builder.setBolt("extract-bolt", extractBolt).shuffleGrouping("twit-spout");
 		builder.setBolt("expand-bolt", expandBolt).shuffleGrouping("extract-bolt");
-		builder.setBolt("report-bolt", reportBolt).shuffleGrouping("expand-bolt");
+		builder.setBolt("validate-bolt", validateBolt).shuffleGrouping("expand-bolt");
+		builder.setBolt("report-bolt", reportBolt).shuffleGrouping("validate-bolt");
 		
 		Config config = new Config();
-		config.setNumWorkers(4);
+		config.setNumWorkers(5);
 		
 		StormSubmitter.submitTopology("twiturl", config, builder.createTopology());
 		
