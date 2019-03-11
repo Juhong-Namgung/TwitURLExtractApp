@@ -15,7 +15,7 @@ import org.apache.storm.tuple.Values;
 public class ValidateURLBolt extends BaseRichBolt {
 
 	OutputCollector collector;
-
+	HttpURLConnection conn = null;
 	@Override
 	public void prepare(Map stormConf, TopologyContext context, OutputCollector collector) {
 		this.collector = collector;
@@ -29,9 +29,13 @@ public class ValidateURLBolt extends BaseRichBolt {
 		// Get HTTP Status Code
 		try {
 			URL url = new URL(expandURL);
-			HttpURLConnection http = (HttpURLConnection) url.openConnection();
-			int statusCode = http.getResponseCode();
-
+			conn = (HttpURLConnection) url.openConnection();
+			conn.setConnectTimeout(3000);
+			conn.setReadTimeout(3000);
+			
+			int statusCode = conn.getResponseCode();
+			System.out.println("?????" + conn.getResponseMessage());
+			conn.disconnect();
 			if (statusCode >= 400) {
 				System.out.println("#######");
 				System.out.println("URL: " + expandURL + " is not valid!! HTTP Status Code: " + statusCode);
@@ -41,6 +45,10 @@ public class ValidateURLBolt extends BaseRichBolt {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(conn != null) {
+				conn.disconnect();
+			}
 		}
 
 	}

@@ -11,12 +11,15 @@ import org.apache.storm.topology.TopologyBuilder;
 
 public class TwitURLExtractTopology {
 	
-	
-	private static String consumerKey = "";
+	private static String consumerKey = "OAuDAsBOG38gkOIhSWAt0aKVc";
+    private static String consumerSecret = "vbwRpGfH89XmBcHF0F6x4ae2ZY1SBssKET6oTc80cpDnMAmcgD";
+    private static String accessToken = "109866396-yfI2NAR8XoWfbS7VVj55dIZgPM4enFYmnx6t1HNP";
+    private static String accessTokenSecret = "VZy5FjwUYSgEP6jJcWy53hVtZ4xIpsmqJRzRUmWGDivVs";
+	/*private static String consumerKey = "";
     private static String consumerSecret = "";
     private static String accessToken = "";
     private static String accessTokenSecret = "";
-	
+	*/
     private static Log LOG = LogFactory.getLog(TwitURLExtractTopology.class);
 
 	public static void main(String[] args) throws AlreadyAliveException, InvalidTopologyException, AuthorizationException {

@@ -45,7 +45,7 @@ public class ReportBolt extends BaseRichBolt {
 		info.setQuotedStatus(tweet.getQuotedStatus());
 		*/
 		
-		String twitURL = (String) input.getValueByField("expandurl");
+		String twitURL = (String) input.getValueByField("validurl");
 		
 		System.out.println(twitURL);
 		
