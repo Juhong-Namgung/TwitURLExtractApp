@@ -17,10 +17,10 @@ import org.apache.storm.topology.TopologyBuilder;
 
 public class TwitURLExtractTopology {
 
-	private static String consumerKey = "OAuDAsBOG38gkOIhSWAt0aKVc";
-	private static String consumerSecret = "vbwRpGfH89XmBcHF0F6x4ae2ZY1SBssKET6oTc80cpDnMAmcgD";
-	private static String accessToken = "109866396-yfI2NAR8XoWfbS7VVj55dIZgPM4enFYmnx6t1HNP";
-	private static String accessTokenSecret = "VZy5FjwUYSgEP6jJcWy53hVtZ4xIpsmqJRzRUmWGDivVs";
+	private static String consumerKey = "consumer-key";
+	private static String consumerSecret = "consumer-secret";
+	private static String accessToken = "access-token";
+	private static String accessTokenSecret = "access-token-secret";
 
 	private static Log LOG = LogFactory.getLog(TwitURLExtractTopology.class);
 
